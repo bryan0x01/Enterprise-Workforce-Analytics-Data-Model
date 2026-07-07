@@ -1,0 +1,26 @@
+paths:
+  raw_data_dir: data/raw
+  processed_data_dir: data/processed
+  output_dir: data/output
+  database_path: database/workforce_analytics.db
+
+random_seed: 42
+
+synthetic_data:
+  employee_count: 3000
+  start_date: "2020-01-01"
+  end_date: "2025-12-31"
+
+salary:
+  min_realistic: 30000
+  max_realistic: 250000
+
+validation:
+  default_resolution_status: Open
+  severity:
+    missing_required_value: Error
+    duplicate_employee_id: Critical
+    invalid_reference: Error
+    invalid_date: Error
+    salary_warning: Warning
+    reconciliation_warning: Warning
