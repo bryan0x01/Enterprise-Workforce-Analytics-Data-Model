@@ -2,8 +2,6 @@
 
 This project builds a local workforce analytics pipeline using Python, Pandas, SQL, SQLite, and Power BI-ready CSV exports. It generates synthetic HR source files, cleans and validates the data, reconciles records across sources, loads a dimensional model, and exports reporting datasets that can be used to build a Power BI dashboard.
 
-The code is intentionally practical: small functions, readable SQL, simple configuration, and no services that require cloud accounts.
-
 ## Business Problem
 
 Workforce reporting usually pulls from several systems: HR employee records, compensation files, department lists, job tables, manager hierarchy files, and planning spreadsheets. Those sources often disagree. This project shows how to turn messy workforce files into a reusable star schema that supports reporting on headcount, hiring, turnover, compensation, tenure, organization structure, and data quality.
